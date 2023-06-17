@@ -1,9 +1,20 @@
-import { Container , Box, Heading, useColorModeValue} from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import {
+    Button,
+    Container,
+    Box,
+    Heading,
+    Image,
+    useColorModeValue,
+    Link
+} from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
     return (
-        <container>
+        <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                 What's good y'all
                 <br/>
@@ -13,7 +24,6 @@ const Page = () => {
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Bumgu Kang 
-                        <br/>
                     </Heading>
                     <p>
                         한국어🇰🇷, English🇨🇦, 廣東話🇭🇰
@@ -28,7 +38,7 @@ const Page = () => {
                     <Image
                         borderColor="whiteAlpha.800"
                         borderWidth={2}
-                        borderSTyle="solid"
+                        borderStyle="solid"
                         maxWidth="100px" 
                         display="inline-block" 
                         borderRadius="full" 
@@ -41,9 +51,38 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Works
                 </Heading>
-                <p>Paragraph</p>
+                <Paragraph>Bumgu is a Web developer based in Seoul, Korea
+                           Very passionate blahblah  
+                    called {' '}
+                    <NextLink href="/works/inkdrop">
+                        <Link>Inkdrop</Link>
+                    </NextLink>
+                    .
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
+                        My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
-        </container>
+
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>1999</BioYear>
+                    Born in Seoul (서울), Korea
+                </BioSection>
+                <BioSection>
+                <BioYear>연도</BioYear>
+                이력 적기
+                </BioSection>
+            </Section>
+        </Container>
     )
 }
 export default Page

@@ -38,6 +38,7 @@
 //}
 //
 //export default Logo
+//copied from Takuya
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import FootprintIcon from './icons/footprint'
