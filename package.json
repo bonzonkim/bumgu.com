@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Kelly b9",
+  "author": "Bumgu Kelly Kang",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
@@ -19,7 +19,8 @@
     "framer-motion": "^10.12.16",
     "next": "^13.4.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0"
   },
   "devDependencies": {
     "eslint": "^8.42.0",
