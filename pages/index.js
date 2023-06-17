@@ -49,7 +49,7 @@ const Page = () => {
                         maxWidth="100px" 
                         display="inline-block" 
                         borderRadius="md" 
-                        src="/images/LA2.JPG" 
+                        src="/images/bumgu.JPG" 
                         alt="Profile Image"
                     />
                 </Box>
