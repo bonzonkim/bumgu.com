@@ -17,6 +17,10 @@ import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 const Page = () => {
     return (
         <Container>
@@ -40,18 +44,24 @@ const Page = () => {
                     ml={{md:4}}
                     align="center"
                 >
-                    <Image
+                    <Box
                         borderColor="cornflowerblue"
                         borderWidth={2}
                         borderStyle="solid"
-                        width="100"
-                        height="80"
-                        maxWidth="100px" 
-                        display="inline-block" 
-                        borderRadius="md" 
-                        src="/images/bumgu.JPG" 
-                        alt="Profile Image"
-                    />
+                        w="130px"
+                        h="130px"
+                        display="inline-block"
+                        borderRadius="full"
+                        overflow="hidden"
+                      >
+                        <ProfileImage
+                          src="/images/bumgu.jpg"
+                          alt="Profile image"
+                          borderRadius="full"
+                          width="130"
+                          height="130"
+                        />
+          </Box>
                 </Box>
             </Box>
             <Section delay={0.1}>
@@ -61,8 +71,8 @@ const Page = () => {
                 <Paragraph>Bumgu is a Web developer based in Seoul, Korea
                            Very passionate blahblah  
                     called {' '}
-                    <NextLink href="/works/inkdrop">
-                        <Link>Inkdrop</Link>
+                    <NextLink href="/works/lively">
+                        <Link>Lively</Link>
                     </NextLink>
                     .
                 </Paragraph>
@@ -133,24 +143,13 @@ const Page = () => {
                 </Heading>
             <List>
               <ListItem>
-                <Link href="https://github.com/craftzdog" target="_blank">
+                <Link href="https://github.com/bonzonkim" target="_blank">
                   <Button
                     variant="ghost"
                     colorScheme="teal"
                     leftIcon={<IoLogoGithub />}
                   >
-                    @craftzdog
-                  </Button>
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://twitter.com/inkdrop_app" target="_blank">
-                  <Button
-                    variant="ghost"
-                    colorScheme="teal"
-                    leftIcon={<IoLogoTwitter />}
-                  >
-                    @inkdrop_app (English)
+                    @bonzonkim
                   </Button>
                 </Link>
               </ListItem>
