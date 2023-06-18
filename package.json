@@ -6,7 +6,8 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "prettier": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"{pages,components}/**/*.{js,jsx}\""
   },
   "keywords": [],
   "author": "Bumgu Kelly Kang",
@@ -24,6 +25,8 @@
     "three": "^0.153.0"
   },
   "devDependencies": {
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.12",
     "eslint": "^8.42.0",
     "eslint-config-next": "^13.4.5",
     "prettier": "^2.8.8"
