@@ -64,8 +64,8 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   return (
-    (<Link href="/" scroll={false}>
-
+    (<Link href="/" scroll={false} passHref legacyBehavior>
+<a>
       <LogoBox>
         <FootprintIcon />
         <Text
@@ -74,10 +74,11 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
+
             Bumgu Kelly Kang
         </Text>
       </LogoBox>
-
+</a>
     </Link>)
   );
 }

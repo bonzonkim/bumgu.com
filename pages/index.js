@@ -17,12 +17,14 @@ import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import Layout from '../components/layouts/article'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 const Page = () => {
     return (
+        <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                 What's good y'all
@@ -167,6 +169,7 @@ const Page = () => {
             </List>
         </Section>
         </Container>
+        </Layout>
     )
 }
 export default Page
