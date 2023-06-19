@@ -22,14 +22,13 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900');
   return (
-    <Link href={href}
-        as={NextLink}
+    <NextLink href={href}
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
       >
         {children}
-    </Link>
+    </NextLink>
   );
 };
 
@@ -72,7 +71,11 @@ const Navbar = (props: any) => {
           <LinkItem href="https://github.com/bonzonkim" path={path}>
             Github
           </LinkItem>
+          <LinkItem href="career" path={path}>
+            Career
+          </LinkItem>
         </Stack>
+
         <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -84,12 +87,12 @@ const Navbar = (props: any) => {
                 aria-lable="Options"
               />
               <MenuList>
-                <Link href="/" as={NextLink}>
+                <NextLink href="/" >
                   <MenuItem >About</MenuItem>
-                </Link>
-                <Link href="/works" as={NextLink}>
+                </NextLink>
+                <NextLink href="/works">
                   <MenuItem >Works</MenuItem>
-                </Link>
+                </NextLink>
                 <MenuItem href="https://github.com/bonzonkim" as={NextLink} >
                   Github
                 </MenuItem>
