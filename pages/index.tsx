@@ -15,23 +15,23 @@ import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
 import Section from '../components/section';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import Image from 'next/image';
 import Layout from '../components/layouts/article';
+import React from "react";
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 });
 const Page = () => {
   return (
-    <Layout>
       <Container>
         <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mb={6}
-          align="center"
+            borderRadius="lg"
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            p={3}
+            mb={6}
+            alignItems="center"
         >
           What's good y'all
           <br />
@@ -45,27 +45,27 @@ const Page = () => {
             <p>한국어🇰🇷, English🇨🇦, 廣東話🇭🇰</p>
           </Box>
           <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 4 }}
-            align="center"
+              flexShrink={0}
+              mt={{ base: 4, md: 0 }}
+              ml={{ md: 4 }}
+              alignItems="center"
           >
             <Box
-              borderColor="cornflowerblue"
-              borderWidth={2}
-              borderStyle="solid"
-              w="130px"
-              h="130px"
-              display="inline-block"
-              borderRadius="full"
-              overflow="hidden"
+                borderColor="cornflowerblue"
+                borderWidth={2}
+                borderStyle="solid"
+                w="130px"
+                h="130px"
+                display="inline-block"
+                borderRadius="full"
+                overflow="hidden"
             >
               <ProfileImage
-                src="/images/bumgu.jpg"
-                alt="Profile image"
-                borderRadius="full"
-                width="130"
-                height="130"
+                  src="/images/bumgu.jpg"
+                  alt="Profile image"
+                  borderRadius="full"
+                  width="130"
+                  height="130"
               />
             </Box>
           </Box>
@@ -82,7 +82,7 @@ const Page = () => {
             </NextLink>
             .
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box alignItems="center" my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
@@ -134,9 +134,10 @@ const Page = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            I Love
           </Heading>
-          <Paragraph>Music, , Playing Bass Guitar,Trombone And, Code</Paragraph>
+          <Paragraph>Music, Playing Bass Guitar, Trombone.</Paragraph>
+          <Paragraph>last but not least, Code</Paragraph>
         </Section>
 
         <Section delay={0.3}>
@@ -145,31 +146,41 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/bonzonkim" target="_blank">
+              <Link href="https://github.com/bonzonkim" target="_blank" as={NextLink}>
                 <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoGithub />}
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<IoLogoGithub />}
                 >
                   @bonzonkim
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.instagram.com/b9beatbox" target="_blank">
+              <Link href="https://www.instagram.com/b9beatbox" target="_blank" as={NextLink}>
                 <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoInstagram />}
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<IoLogoInstagram />}
                 >
                   @b9beatbox
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/bumgu-kang-820010269/" target="_blank" as={NextLink}>
+                <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<IoLogoLinkedin />}
+                >
+                  Bumgu (Kelly) Kang
                 </Button>
               </Link>
             </ListItem>
           </List>
         </Section>
       </Container>
-    </Layout>
   );
 };
 export default Page;

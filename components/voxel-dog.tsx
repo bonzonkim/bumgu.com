@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Box, Spinner } from '@chakra-ui/react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { loadGLTFModel } from '../libs/model.js';
+import { loadGLTFModel } from '../libs/model';
 import { m } from 'framer-motion';
 import { RGBA_ASTC_10x5_Format } from 'three';
 import { render } from 'react-dom';

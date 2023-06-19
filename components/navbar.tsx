@@ -1,4 +1,4 @@
-import Logo from './logo.js';
+import Logo from './logo';
 import NextLink from 'next/link';
 
 import {
@@ -22,19 +22,18 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900');
   return (
-    <NextLink href={href}>
-      <Link
+    <Link href={href}
+        as={NextLink}
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
       >
         {children}
-      </Link>
-    </NextLink>
+    </Link>
   );
 };
 
-const Navbar = (props) => {
+const Navbar = (props: any) => {
   const { path } = props;
 
   return (
@@ -51,9 +50,8 @@ const Navbar = (props) => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        alignItems="center"
+        justifyItems="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -86,13 +84,13 @@ const Navbar = (props) => {
                 aria-lable="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <MenuItem as={Link} href="https://github.com/bonzonkim">
+                <Link href="/" as={NextLink}>
+                  <MenuItem >About</MenuItem>
+                </Link>
+                <Link href="/works" as={NextLink}>
+                  <MenuItem >Works</MenuItem>
+                </Link>
+                <MenuItem href="https://github.com/bonzonkim" as={NextLink} >
                   Github
                 </MenuItem>
               </MenuList>
