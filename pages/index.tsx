@@ -19,7 +19,6 @@ import Image from 'next/image';
 import { FaJava,FaSwift,FaReact } from 'react-icons/fa';
 import {SiNextdotjs, SiLua, SiVim, SiSpringboot,SiCss3, SiHtml5} from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
-import Layout from '../components/layouts/article';
 import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
 

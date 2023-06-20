@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Text, useColorModeValue } from '@chakra-ui/react';
-import HealthyFlowerIcon from './icons/healthyFlower';
+import { Text, useColorModeValue, Image } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import React from 'react';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -12,7 +12,7 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-  > svg {
+  > Image {
     transition: 200ms ease;
   }
 
@@ -25,7 +25,13 @@ const Logo = () => {
   return (
     <Link href="/" scroll={false}>
         <LogoBox>
-        <HealthyFlowerIcon />
+        <Image 
+                src="/images/HealthyFlower.JPG"
+                alt="logo"
+                width={30}
+                height={30}
+                borderRadius="50%"
+        />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'

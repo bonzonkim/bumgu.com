@@ -4,7 +4,6 @@ import NextLink from 'next/link';
 import {
   Container,
   Box,
-  Link,
   Stack,
   Heading,
   Flex,
@@ -71,7 +70,7 @@ const Navbar = (props: any) => {
           <LinkItem href="https://github.com/bonzonkim" path={path}>
             Github
           </LinkItem>
-          <LinkItem href="career" path={path}>
+          <LinkItem href="/career" path={path}>
             Career
           </LinkItem>
         </Stack>
@@ -88,13 +87,16 @@ const Navbar = (props: any) => {
               />
               <MenuList>
                 <NextLink href="/" >
-                  <MenuItem >About</MenuItem>
+                  <MenuItem >About me</MenuItem>
                 </NextLink>
                 <NextLink href="/works">
                   <MenuItem >Works</MenuItem>
                 </NextLink>
                 <MenuItem href="https://github.com/bonzonkim" as={NextLink} >
                   Github
+                </MenuItem>
+                <MenuItem href="/career" as={NextLink} >
+                  Career
                 </MenuItem>
               </MenuList>
             </Menu>
