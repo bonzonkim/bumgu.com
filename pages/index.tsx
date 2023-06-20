@@ -84,11 +84,6 @@ const Page = () => {
             <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;He has been programming since 2022 and is currently looking for a job as a
             &nbsp;&nbsp;&nbsp;&nbsp;Web developer.
-            {' '}
-            <NextLink href="/works">
-                Lively
-            </NextLink>
-
           </Paragraph>
           <Center>
           <Box  my={4}>
@@ -310,7 +305,7 @@ const Page = () => {
             Contact
           </Heading>
           <Paragraph>
-            <NextLink href="mailto:flrhyme9@gmail.com">
+            <NextLink href="mailto:flrhyme9@gmail.com" target="_blank">
               <Button
                   leftIcon={<EmailIcon />}
                   colorScheme="teal">

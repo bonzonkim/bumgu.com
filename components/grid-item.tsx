@@ -27,20 +27,34 @@ export const WorkGridItem = ({ children, href, title, thumbnail }) => (
     <Center>
       <Box w="100%">
         <NextLink href="/works/">
-          <LinkBox cursor="pointer">
             <Image
               src={thumbnail}
               alt={title}
               className="grid-item-thumbnail"
               placeholder="blur"
             />
-            <LinkOverlay href={href} target="_blank">
               <Text mt={2} fontSize={20}>
                 {title}
               </Text>
-            </LinkOverlay>
             <Text fontSize={14}>{children}</Text>
-          </LinkBox>
+        </NextLink>
+      </Box>
+    </Center>
+);
+export const CareerGridItem = ({ children, href, title, thumbnail }) => (
+    <Center>
+      <Box w="100%">
+        <NextLink href="/career/">
+            <Image
+              src={thumbnail}
+              alt={title}
+              className="grid-item-thumbnail"
+              placeholder="blur"
+            />
+              <Text mt={2} fontSize={20}>
+                {title}
+              </Text>
+            <Text fontSize={14}>{children}</Text>
         </NextLink>
       </Box>
     </Center>
