@@ -16,7 +16,7 @@ import thumbnailMom2019_2 from '../public/images/career/mom2019_2.jpg';
 const Career = () => {
     return (
         <Container>
-          <Section delay={0.3}>
+          <Section>
             <Heading as="h3" variant="section-title">
                 Previous Works
             </Heading>
@@ -100,7 +100,7 @@ const Career = () => {
 
           </Section>
 
-            <Section delay={0.3}>
+            <Section >
                 <Heading as="h3" variant="section-title">
                     Awards and Honors
                 </Heading>

@@ -70,7 +70,7 @@ const Page = () => {
             </Box>
           </Box>
         </Box>
-        <Section delay={0.1}>
+        <Section>
           <Heading as="h3" variant="section-title">
             Works
           </Heading>
@@ -100,7 +100,7 @@ const Page = () => {
           </Center>
         </Section>
 
-        <Section delay={0.2}>
+        <Section>
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
@@ -155,7 +155,7 @@ const Page = () => {
             </Center>
         </Section>
 
-        <Section delay={0.3}>
+        <Section>
           <Heading as="h3" variant="section-title">
             Skills
           </Heading>
@@ -256,7 +256,7 @@ const Page = () => {
           </Button>
         </Section>
 
-        <Section delay={0.3}>
+        <Section>
           <Heading as="h3" variant="section-title">
             I Love
           </Heading>
@@ -264,7 +264,7 @@ const Page = () => {
           <Paragraph>last but not least, Code</Paragraph>
         </Section>
 
-        <Section delay={0.3}>
+        <Section>
           <Heading as="h3" variant="section-title">
             SNS
           </Heading>
@@ -304,7 +304,7 @@ const Page = () => {
             </ListItem>
           </List>
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <Heading as="h3" variant="section-title">
             Contact
           </Heading>
