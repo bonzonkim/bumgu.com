@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 import React from 'react';
@@ -14,7 +14,7 @@ const Works = () => {
       <Layout title="works">
           <SimpleGrid columns={[1, 1, 2]} gap={10}>
             <Section>
-              <WorkGridItem id="lively" title="Lively" thumbnail={thumbnailLively}>
+              <WorkGridItem href="/" title="Lively" thumbnail={thumbnailLively}>
                 Lively is a Web application built with Java and Spring framework.
                 this Web application has a Map that provides real-time traffic
                 information based on your location. also has a 6 kind of bulletin board

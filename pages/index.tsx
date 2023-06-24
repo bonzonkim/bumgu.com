@@ -32,17 +32,15 @@ const Page = () => {
             borderRadius="lg"
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             p={3}
-            mb={6}
-            align="center"
+            mb={20}
+            textAlign="center"
         >
-          What's good y'all
-          <br />
-          I'm a Web developer and a Beatboxer based in Seoul, Korea.
+          Hi, I'm a Web developer and a Beatboxer based in Seoul, Korea.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Bumgu Kang
+            강범구 Bumgu Kang
             </Heading>
             <p>한국어🇰🇷, English🇨🇦, 廣東話🇭🇰</p>
           </Box>
@@ -78,14 +76,21 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Bumgu is a Web developer based in Seoul, Korea.
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;Very passionate on Web development.
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;He has been programming since 2022 and is currently looking for a job as a
-            &nbsp;&nbsp;&nbsp;&nbsp;Web developer.
+          </Paragraph>
+          <Paragraph>
+            Very passionate on Web development.
+          </Paragraph>
+          <Paragraph>
+            He has been Beatboxing for 12 years  
+          </Paragraph>
+          <Paragraph>
+            And now, He decided to become a Developer.
+          </Paragraph>
+          <Paragraph>
+            You can check my career page for more details.
           </Paragraph>
           <Center>
-          <Box  my={4}>
+          <Box my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Check out my works
