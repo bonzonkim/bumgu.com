@@ -5,7 +5,7 @@ import { CareerGridItem }from '../components/grid-item';
 import React from 'react';
 import Layout from '../components/layouts/article';
 
-import thumbnailBeatboxChallenge from '../public/images/career/BeatboxChallenge2020.png';
+import thumbnailBeatboxChallenge from '../public/images/career/beatboxChallenge2020.png';
 import thumbnailBeatboxCamp from '../public/images/career/beatboxcamp2019.jpg';
 import thumbnailKbc2018 from '../public/images/career/kbc2018.png';
 import thumbnailKbc2019 from '../public/images/career/kbc2019.jpg';
