@@ -17,7 +17,7 @@ import Section from '../components/section';
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin , IoLogoJavascript} from 'react-icons/io5';
 import Image from 'next/image';
 import { FaJava,FaSwift,FaReact } from 'react-icons/fa';
-import {SiNextdotjs, SiLua, SiVim, SiSpringboot,SiCss3, SiHtml5} from 'react-icons/si';
+import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5} from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
 import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
@@ -30,7 +30,7 @@ const Page = () => {
       <Container>
         <Box
             borderRadius="lg"
-            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            bg={useColorModeValue('whiteAlpha.300', 'blackAlpha.300')}
             p={3}
             mb={20}
             textAlign="center"
@@ -71,7 +71,7 @@ const Page = () => {
         </Box>
         <Section>
           <Heading as="h3" variant="section-title">
-            Works
+            About me
           </Heading>
           <Paragraph>
             Bumgu is a Web developer based in Seoul, Korea.
