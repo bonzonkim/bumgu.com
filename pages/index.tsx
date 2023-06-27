@@ -60,12 +60,11 @@ const Page = () => {
                 borderRadius="full"
                 overflow="hidden"
             >
-              <ProfileImage
+              <Image
                   src="/images/bumgu.jpg"
                   alt="Profile image"
-                  borderRadius="full"
-                  width="130"
-                  height="130"
+                  width={130}
+                  height={130}
               />
             </Box>
           </Box>
