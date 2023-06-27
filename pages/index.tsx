@@ -186,14 +186,6 @@ const Page = () => {
           <Button
               variant="ghost"
               colorScheme="teal"
-              leftIcon={<SiLua/>}
-          >
-            Lua
-          </Button>
-          <br/>
-          <Button
-              variant="ghost"
-              colorScheme="teal"
               leftIcon={<FaReact/>}
           >
             React
