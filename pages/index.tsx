@@ -21,6 +21,7 @@ import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5} from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
 import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
+import ProfileBumgu from '../public/images/bumgu.jpg';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -61,7 +62,7 @@ const Page = () => {
                 overflow="hidden"
             >
               <Image
-                  src="/images/bumgu.jpg"
+                  src={ProfileBumgu}
                   alt="Profile image"
                   width={130}
                   height={130}
