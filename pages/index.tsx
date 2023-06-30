@@ -23,9 +23,6 @@ import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
 import ProfileBumgu from '@/public/bumgu.jpg';
 
-//const ProfileImage = chakra(Image, {
-//  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
-//});
 const Page = () => {
   return (
       <Container>

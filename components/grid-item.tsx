@@ -1,4 +1,3 @@
-import NextLink from 'next/link';
 import Image from 'next/image';
 import {Box, Text, LinkBox, LinkOverlay, Center} from '@chakra-ui/react';
 import { Global } from '@emotion/react';
@@ -26,7 +25,6 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 export const WorkGridItem = ({ children, href, title, thumbnail }) => (
     <Center>
       <Box w="100%">
-        <NextLink href="/works/">
             <Image
               src={thumbnail}
               alt={title}
@@ -37,14 +35,12 @@ export const WorkGridItem = ({ children, href, title, thumbnail }) => (
                 {title}
               </Text>
             <Text fontSize={14}>{children}</Text>
-        </NextLink>
       </Box>
     </Center>
 );
 export const CareerGridItem = ({ children, href, title, thumbnail }) => (
     <Center>
       <Box w="100%">
-        <NextLink href="/career/">
             <Image
               src={thumbnail}
               alt={title}
@@ -55,7 +51,6 @@ export const CareerGridItem = ({ children, href, title, thumbnail }) => (
                 {title}
               </Text>
             <Text fontSize={14}>{children}</Text>
-        </NextLink>
       </Box>
     </Center>
 );
