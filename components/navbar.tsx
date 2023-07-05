@@ -61,8 +61,8 @@ const Navbar = (props: any) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://github.com/bonzonkim" path={path}>
-            Github
+          <LinkItem href="https://github.com/bonzonkim/kellyb9-homepage" path={path}>
+            Sources
           </LinkItem>
           <LinkItem href="/career" path={path}>
             Career
@@ -86,8 +86,8 @@ const Navbar = (props: any) => {
                 <NextLink href="/works">
                   <MenuItem >Works</MenuItem>
                 </NextLink>
-                <MenuItem href="https://github.com/bonzonkim" as={NextLink} >
-                  Github
+                <MenuItem href="https://github.com/bonzonkim/kellyb9-homepage" as={NextLink} >
+                  Sources
                 </MenuItem>
                 <MenuItem href="/career" as={NextLink} >
                   Career
