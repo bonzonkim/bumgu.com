@@ -17,7 +17,7 @@ import Section from '../components/section';
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin , IoLogoJavascript} from 'react-icons/io5';
 import Image from 'next/image';
 import { FaJava,FaSwift,FaReact } from 'react-icons/fa';
-import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5} from 'react-icons/si';
+import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5,SiSplunk} from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
 import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
@@ -33,7 +33,7 @@ const Page = () => {
             mb={20}
             textAlign="center"
         >
-          Hi, I'm a Web developer and a Beatboxer based in Seoul, Korea.
+          Hi, I'm a Software Engineer based in Seoul, Korea.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -72,7 +72,7 @@ const Page = () => {
             About me
           </Heading>
           <Paragraph>
-            Bumgu is a Web developer based in Seoul, Korea.
+            Bumgu is a Software Engineer based in Seoul, Korea.
           </Paragraph>
           <Paragraph>
             Very passionate on Web development.
@@ -140,6 +140,12 @@ const Page = () => {
             Finishied from KH Information Technology Academy (Java,Spring Backend)
                     <br />
             KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
+          </BioSection>
+          <BioSection>
+            <BioYear>2023 Aug~</BioYear>
+             Working at Cslac as a software engineer & ITOps, CyberSecurity
+                    <br />
+             씨에스라크 소프트웨어 엔지니어 근무
           </BioSection>
             <Center>
               <Box  my={4}>
@@ -242,6 +248,14 @@ const Page = () => {
               leftIcon={<SiCss3/>}
           >
             CSS
+          </Button>
+          <br/>
+          <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<SiSplunk/>}
+          >
+            Splunk
           </Button>
         </Section>
 
