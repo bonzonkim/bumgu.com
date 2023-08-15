@@ -75,13 +75,10 @@ const Page = () => {
             Bumgu is a Software Engineer based in Seoul, Korea.
           </Paragraph>
           <Paragraph>
-            Very passionate on Web development.
+            I have been working as a Musian and Event manager.
           </Paragraph>
           <Paragraph>
-            He has been Beatboxing for 12 years  
-          </Paragraph>
-          <Paragraph>
-            And now, He decided to become a Developer.
+            I am currently working as a Software Engineer.
           </Paragraph>
           <Paragraph>
             You can check my career page for more details.
