@@ -33,14 +33,14 @@ const Page = () => {
             mb={20}
             textAlign="center"
         >
-          Hi, I'm a Software Engineer based in Seoul, Korea.
+          Hi, I'm a Software Engineer and SecOps based in Seoul, Korea.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
             강범구 Bumgu Kang
             </Heading>
-            <p>한국어🇰🇷, English🇨🇦, 廣東話🇭🇰</p>
+            <p>한국어🇰🇷, English🇨🇦</p>
           </Box>
           <Box
               flexShrink={0}
@@ -72,7 +72,7 @@ const Page = () => {
             About me
           </Heading>
           <Paragraph>
-            Bumgu is a Software Engineer based in Seoul, Korea.
+            Bumgu is a Software Engineer and SecOps based in Seoul, Korea.
           </Paragraph>
           <Paragraph>
             I have been working as a Musian and Event manager.
