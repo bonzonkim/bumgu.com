@@ -9,6 +9,7 @@ const Main = ({ children, router }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Bumgu Kelly Kang</title>
+        <link rel="icon" href="/favicons/favico.ico" />
       </Head>
 
       <NavBar path={router.asPath} />
