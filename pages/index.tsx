@@ -33,7 +33,7 @@ const Page = () => {
             mb={20}
             textAlign="center"
         >
-          Hi, I'm a Software Engineer and SecOps based in Seoul, Korea.
+          Hi, I'm a Software Engineer based in Seoul, Korea.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -72,7 +72,7 @@ const Page = () => {
             About me
           </Heading>
           <Paragraph>
-            Bumgu is a Software Engineer and SecOps based in Seoul, Korea.
+            Bumgu is a Software Engineer based in Seoul, Korea.
           </Paragraph>
           <Paragraph>
             I have been working as a Musian and Event manager.
@@ -139,7 +139,7 @@ const Page = () => {
             KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
           </BioSection>
           <BioSection>
-            <BioYear>2023 Aug~</BioYear>
+            <BioYear>2023 Aug ~ 2023 Oct</BioYear>
              Working at Cslac as a software engineer & ITOps, CyberSecurity
                     <br />
              씨에스라크 소프트웨어 엔지니어 근무
