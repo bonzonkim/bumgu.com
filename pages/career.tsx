@@ -165,7 +165,6 @@ const Career = () => {
                    <SimpleGrid columns={[1, 1, 2]} gap={6}>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="KBC2018"
                             thumbnail={thumbnailKbc2018}
                           >
@@ -173,7 +172,6 @@ const Career = () => {
                         </Section>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="KBC2019"
                             thumbnail={thumbnailKbc2019}
                           >
@@ -181,7 +179,6 @@ const Career = () => {
                         </Section>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="Mom2019 Vol.1"
                             thumbnail={thumbnailMom2019}
                           >
@@ -189,7 +186,6 @@ const Career = () => {
                         </Section>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="Mom2019 Vol.2"
                             thumbnail={thumbnailMom2019_2}
                           >
@@ -197,7 +193,6 @@ const Career = () => {
                         </Section>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="BeatboxCamp"
                             thumbnail={thumbnailBeatboxCamp}
                           >
@@ -205,7 +200,6 @@ const Career = () => {
                         </Section>
                         <Section>
                           <CareerGridItem
-                            href="career"
                             title="OPCD Beatbox Challenge"
                             thumbnail={thumbnailBeatboxChallenge}
                           >

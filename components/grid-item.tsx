@@ -22,7 +22,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </Center>
 );
 
-export const WorkGridItem = ({ children, href, title, thumbnail }) => (
+export const WorkGridItem = ({ children, title, thumbnail }) => (
     <Center>
       <Box w="100%">
             <Image
@@ -38,7 +38,7 @@ export const WorkGridItem = ({ children, href, title, thumbnail }) => (
       </Box>
     </Center>
 );
-export const CareerGridItem = ({ children, href, title, thumbnail }) => (
+export const CareerGridItem = ({ children, title, thumbnail }) => (
     <Center>
       <Box w="100%">
             <Image

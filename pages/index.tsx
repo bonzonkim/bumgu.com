@@ -17,7 +17,7 @@ import Section from '../components/section';
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin , IoLogoJavascript} from 'react-icons/io5';
 import Image from 'next/image';
 import { FaJava,FaSwift,FaReact } from 'react-icons/fa';
-import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5,SiSplunk} from 'react-icons/si';
+import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5,SiSplunk,SiTypescript} from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
 import React from "react";
 import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
@@ -178,9 +178,9 @@ const Page = () => {
           <Button
               variant="ghost"
               colorScheme="teal"
-              leftIcon={<FaSwift/>}
+              leftIcon={<SiTypescript/>}
           >
-            Swift
+            TypeScript
           </Button>
           <br/>
           <Button
@@ -292,7 +292,7 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.linkedin.com/in/bumgu-kang-820010269/" target="_blank" as={NextLink}>
+              <Link href="https://www.linkedin.com/in/bumgu" target="_blank" as={NextLink}>
                 <Button
                     variant="ghost"
                     colorScheme="teal"
