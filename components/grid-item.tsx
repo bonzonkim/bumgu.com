@@ -30,6 +30,7 @@ export const WorkGridItem = ({ children, title, thumbnail }) => (
               alt={title}
               className="grid-item-thumbnail"
               placeholder="blur"
+              onClick={() => window.open(`https://github.com/bonzonkim/${title}`, "_blank")}  
             />
               <Text mt={2} fontSize={20}>
                 {title}

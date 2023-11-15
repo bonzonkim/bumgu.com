@@ -16,9 +16,6 @@ const LogoBox = styled.span`
     transition: 200ms ease;
   }
 
-  &:hover > svg {
-    transform: rotate(20deg);
-  }
 `;
 
 const Logo = () => {
@@ -38,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Bumgu Kelly Kang
+            Bumgu Kang
             </Text>
         </LogoBox>
     </Link>

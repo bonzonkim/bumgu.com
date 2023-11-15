@@ -16,25 +16,15 @@ import { BioSection, BioYear } from '../components/bio';
 import Section from '../components/section';
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin , IoLogoJavascript} from 'react-icons/io5';
 import Image from 'next/image';
-import { FaJava,FaSwift,FaReact } from 'react-icons/fa';
-import {SiNextdotjs, SiVim, SiSpringboot,SiCss3, SiHtml5,SiSplunk,SiTypescript} from 'react-icons/si';
-import { GrOracle } from 'react-icons/gr';
+import { FaJava, FaReact } from 'react-icons/fa';
+import {SiNextdotjs, SiVim, SiSpringboot, SiCss3, SiHtml5, SiSplunk, SiTypescript } from 'react-icons/si';
+import { GrOracle, GrMysql } from 'react-icons/gr';
 import React from "react";
-import {SiNodeDotJs} from "@react-icons/all-files/si/SiNodeDotJs";
 import ProfileBumgu from '@/public/bumgu.jpg';
 
 const Page = () => {
   return (
       <Container>
-        <Box
-            borderRadius="lg"
-            bg={useColorModeValue('whiteAlpha.300', 'blackAlpha.300')}
-            p={3}
-            mb={20}
-            textAlign="center"
-        >
-          Hi, I'm a Software Engineer based in Seoul, Korea.
-        </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -72,16 +62,7 @@ const Page = () => {
             About me
           </Heading>
           <Paragraph>
-            Bumgu is a Software Engineer based in Seoul, Korea.
-          </Paragraph>
-          <Paragraph>
-            I have been working as a Musian and Event manager.
-          </Paragraph>
-          <Paragraph>
-            I am currently working as a Software Engineer.
-          </Paragraph>
-          <Paragraph>
-            You can check my career page for more details.
+            안녕하세요. 웹 개발자 강범구 입니다.
           </Paragraph>
           <Center>
           <Box my={4}>
@@ -100,49 +81,35 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>1999</BioYear>
-            Born in Seoul (서울), Korea
+            서울 출생
           </BioSection>
           <BioSection>
             <BioYear>2017</BioYear>
-            Graduated from Seoul IT High School
-                    <br />
-            서울 아이티 고등학교 졸업
+            서울 아이티 고등학교 전자통신과 졸업
           </BioSection>
           <BioSection>
             <BioYear>2017 ~ 2019</BioYear>
-            Worked at Gwanggaeto Samulnori as a Beatbox Performer and freelance Beatbox Artist
-                    <br />
-             광개토 사물놀이 예술단 비트박서, 프리랜서 비트박서
+            프리랜서 비트박서
           </BioSection>
           <BioSection>
             <BioYear>2019 ~ 2021</BioYear>
-            Mandatory military service at 25th Division Armyband as Beatboxer,Trombonist
-                    <br />
             25사단 군악대 (비트박서, 트럼보니스트)
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Worked at Dobong-gu office as street culture Event manager&organizer
-                    <br />
             도봉구청 서울시 뉴딜 일자리 문화공간 및 이벤트 기획,운영 근무
           </BioSection>
           <BioSection>
             <BioYear>2021 ~ 2022</BioYear>
-            Moved to Canada for working holiday Worked at liqure store and Korean fast-food as Cashier and Customer Service, sub-cook
-                    <br />
             캐나다 워킹홀리데이, 리쿼스토어, 한국 패스트 푸드 고객응대, 서브쿡, 캐셔 근무
           </BioSection>
           <BioSection>
             <BioYear>2022 ~ 2023</BioYear>
-            Finishied from KH Information Technology Academy (Java,Spring Backend)
-                    <br />
             KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
           </BioSection>
           <BioSection>
             <BioYear>2023 Aug ~ 2023 Oct</BioYear>
-             Working at Cslac as a software engineer & ITOps, CyberSecurity
-                    <br />
-             씨에스라크 소프트웨어 엔지니어 근무
+             씨에스라크 소프트웨어(Splunk) 엔지니어 근무
           </BioSection>
             <Center>
               <Box  my={4}>
@@ -210,17 +177,17 @@ const Page = () => {
           <Button
               variant="ghost"
               colorScheme="teal"
-              leftIcon={<SiNodeDotJs/>}
+              leftIcon={<GrOracle/>}
           >
-            Node.js
+            Oracle
           </Button>
           <br/>
           <Button
               variant="ghost"
               colorScheme="teal"
-              leftIcon={<GrOracle/>}
+              leftIcon={<GrMysql/>}
           >
-            Oracle
+            MySQL
           </Button>
           <br/>
           <Button
@@ -260,7 +227,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             I Love
           </Heading>
-          <Paragraph>Music, Playing Bass Guitar, Trombone.</Paragraph>
+          <Paragraph>음악과 베이스기타 연주, 트럼본 연주</Paragraph>
           <Paragraph>last but not least, Code</Paragraph>
         </Section>
 

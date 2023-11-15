@@ -18,7 +18,7 @@ const Career = () => {
         <Container>
           <Section>
             <Heading as="h3" variant="section-title">
-                Previous Works
+                Previous Works / 이전에 했던 일
             </Heading>
                 <CareerSection>
                     <CareerParagraph>
@@ -100,63 +100,6 @@ const Career = () => {
 
           </Section>
 
-            <Section >
-                <Heading as="h3" variant="section-title">
-                    Awards and Honors
-                </Heading>
-                  <CareerSection>
-                        <CareerParagraph>
-                        • Battler Beatbox Festival Vice Champion
-                        </CareerParagraph>
-                  </CareerSection>  
-                  <CareerSection>
-                        <CareerParagraph>
-                        • Sound Effect Vice Champion
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                       • Participate in Golden Beatbox Battle in China as Korea national team
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                        • Red Voice Vice Champion in China
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                        • 2017 Korea Beatbox Championshop TOP 4
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                        • Awarded 2017 Korea K-wave performing arts 
-                        <br/>
-                        - 2017 한류대상 공연예술 공로대상 수상
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                       • 2018 DIE TO DIE TOP 4 
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                       • 2018 DIE TO DIE TOP 8 
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                        • 2018 Korea Beatbox Championship TOP 4
-                        </CareerParagraph>
-                  </CareerSection>
-                <CareerSection>
-                        <CareerParagraph>
-                        • 2019 Korea Beatbox Championship TOP 16 
-                        </CareerParagraph>
-                  </CareerSection>
-            </Section>
 
                 <Heading as="h3" variant="section-title">
                     Hosted Events

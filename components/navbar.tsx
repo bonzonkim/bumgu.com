@@ -59,7 +59,7 @@ const Navbar = (props: any) => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Projects
           </LinkItem>
           <LinkItem href="https://github.com/bonzonkim/kellyb9-homepage" path={path}>
             Sources
@@ -80,12 +80,12 @@ const Navbar = (props: any) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" >
-                  <MenuItem >About me</MenuItem>
-                </NextLink>
-                <NextLink href="/works">
-                  <MenuItem >Works</MenuItem>
-                </NextLink>
+                  <MenuItem href="/" as={NextLink} >
+                  About me
+                  </MenuItem>
+                  <MenuItem href="/works" as={NextLink}>
+                  Projects
+                  </MenuItem>
                 <MenuItem href="https://github.com/bonzonkim/kellyb9-homepage" as={NextLink} >
                   Sources
                 </MenuItem>
