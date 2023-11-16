@@ -6,7 +6,7 @@ import Layout from '../components/layouts/article';
 import thumbnailLively from '../public/images/works/Lively_main.png';
 import thumbnailWhatCandy from '../public/images/works/whatCandy.png';
 
-const Works = () => {
+const Projects = () => {
   return (
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
@@ -30,4 +30,4 @@ const Works = () => {
     </Container>
   );
 };
-export default Works;
+export default Projects;
