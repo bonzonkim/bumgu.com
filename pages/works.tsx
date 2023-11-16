@@ -1,6 +1,6 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Container, Heading } from '@chakra-ui/react';
 import Section from '../components/section';
-import { WorkGridItem } from '../components/grid-item';
+import { ProjectGridItem } from '../components/grid-item';
 import React from 'react';
 import Layout from '../components/layouts/article';
 import thumbnailLively from '../public/images/works/Lively_main.png';
@@ -14,17 +14,17 @@ const Works = () => {
       </Heading>
       <Layout title="works">
             <Section>
-              <WorkGridItem title="Lively" thumbnail={thumbnailLively}>
+              <ProjectGridItem title="Lively" thumbnail={thumbnailLively}>
                 Lively는 지역 커뮤니티를 표방한
                 실시간 위치 기반 교통 상황을 보여주는 맵이 있으며
                 기부, 질문 등 지역 커뮤니티에 필요한 게시판이 있습니다.
-              </WorkGridItem>
+              </ProjectGridItem>
             </Section>
             <Section>
-              <WorkGridItem title="what-candy" thumbnail={thumbnailWhatCandy}>
+              <ProjectGridItem title="what-candy" thumbnail={thumbnailWhatCandy}>
                 응답에 따라 성격 유형을 탕후루에 비교해 분류하는
                 심리테스트 웹 앱 입니다.
-              </WorkGridItem>
+              </ProjectGridItem>
             </Section>
       </Layout>
     </Container>
