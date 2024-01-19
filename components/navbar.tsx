@@ -18,11 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
 
 const LinkItem = ({ href, path, children }) => {
-  return (
-    <NextLink href={href}>
-        {children}
-    </NextLink>
-  );
+  return <NextLink href={href}>{children}</NextLink>;
 };
 
 const Navbar = (props: any) => {
@@ -61,7 +57,10 @@ const Navbar = (props: any) => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem href="https://github.com/bonzonkim/kellyb9-homepage" path={path}>
+          <LinkItem
+            href="https://github.com/bonzonkim/kellyb9-homepage"
+            path={path}
+          >
             Sources
           </LinkItem>
           <LinkItem href="/career" path={path}>
@@ -80,16 +79,19 @@ const Navbar = (props: any) => {
                 aria-label="Options"
               />
               <MenuList>
-                  <MenuItem href="/" as={NextLink} >
+                <MenuItem href="/" as={NextLink}>
                   About me
-                  </MenuItem>
-                  <MenuItem href="/projects" as={NextLink}>
+                </MenuItem>
+                <MenuItem href="/projects" as={NextLink}>
                   Projects
-                  </MenuItem>
-                <MenuItem href="https://github.com/bonzonkim/kellyb9-homepage" as={NextLink} >
+                </MenuItem>
+                <MenuItem
+                  href="https://github.com/bonzonkim/kellyb9-homepage"
+                  as={NextLink}
+                >
                   Sources
                 </MenuItem>
-                <MenuItem href="/career" as={NextLink} >
+                <MenuItem href="/career" as={NextLink}>
                   Career
                 </MenuItem>
               </MenuList>

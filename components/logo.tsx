@@ -15,29 +15,28 @@ const LogoBox = styled.span`
   > Image {
     transition: 200ms ease;
   }
-
 `;
 
 const Logo = () => {
   return (
     <Link href="/" scroll={false}>
-        <LogoBox>
-        <Image 
-                src="/images/HealthyFlower.JPG"
-                alt="logo"
-                width={30}
-                height={30}
-                borderRadius="50%"
+      <LogoBox>
+        <Image
+          src="/images/HealthyFlower.JPG"
+          alt="logo"
+          width={30}
+          height={30}
+          borderRadius="50%"
         />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Bumgu Kang
-            </Text>
-        </LogoBox>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          ml={3}
+        >
+          Bumgu Kang
+        </Text>
+      </LogoBox>
     </Link>
   );
 };

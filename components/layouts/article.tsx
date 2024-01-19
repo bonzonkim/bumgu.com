@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { GridItemStyle } from '../grid-item';
+import { ReactNode } from 'react';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -8,7 +9,12 @@ const variants = {
   exit: { opacity: 0, x: 0, y: 20 },
 };
 
-const Layout = ({ children, title }) => (
+interface MainLayoutProps {
+  children: ReactNode;
+  title: string;
+}
+
+const Layout = ({ children, title }: MainLayoutProps) => (
   <motion.article
     initial="hidden"
     animate="enter"
@@ -20,7 +26,7 @@ const Layout = ({ children, title }) => (
     <>
       {title && (
         <Head>
-          <title {...title}> - Bumgu Kelly Kang</title>
+          <title>Bumgu Kang | Software Developer</title>
         </Head>
       )}
       {children}
