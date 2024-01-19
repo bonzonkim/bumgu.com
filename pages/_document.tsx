@@ -8,15 +8,16 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Software Developer" />
+        <meta name="type" content="website" />
+        <meta name="title" content="Software Developer" />
         <meta
-          property="og:description"
+          name="description"
           content="Software Developer based in Seoul, Korea"
         />
-        <meta property="og:url" content="https://bumgu.com" />
-        <meta property="og:locale" content="en-US" />
-
+        <meta name="url" content="https://bumgu.com" />
+        <meta name="locale" content="en-US" />
+        <meta name="author" content="Bumgu Kang"/>
+        <meta name="keywords" content="Web, Web Developer, Seoul Developer, Java, Javascript"/>
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
