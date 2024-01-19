@@ -7,7 +7,6 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="type" content="website" />
         <meta name="title" content="Software Developer" />
         <meta
@@ -18,6 +17,7 @@ export default class Document extends NextDocument {
         <meta name="locale" content="en-US" />
         <meta name="author" content="Bumgu Kang"/>
         <meta name="keywords" content="Web, Web Developer, Seoul Developer, Java, Javascript"/>
+        <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
