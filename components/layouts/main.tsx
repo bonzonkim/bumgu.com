@@ -8,15 +8,6 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <title>Bumgu Kang | Software Developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Software Developer" />
-        <meta
-          property="og:description"
-          content="Software Developer based in Seoul, Korea"
-        />
-        <meta property="og:url" content="https://bumgu.com" />
-        <meta property="og:locale" content="en-US" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
