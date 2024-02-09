@@ -26,12 +26,14 @@ interface GridItemProps {
   children: string;
   title: string;
   thumbnail: StaticImageData;
+  gitRepo: string;
 }
 
 export const ProjectGridItem = ({
   children,
   title,
   thumbnail,
+  gitRepo,
 }: GridItemProps) => (
   <Center>
     <Box w="100%">
@@ -42,7 +44,7 @@ export const ProjectGridItem = ({
         placeholder="blur"
         loading="lazy"
         onClick={() =>
-          window.open(`https://github.com/bonzonkim/${title}`, '_blank')
+          window.open(`https://github.com/bonzonkim/${gitRepo}`, '_blank')
         }
       />
       <Text
@@ -50,7 +52,7 @@ export const ProjectGridItem = ({
         fontSize={20}
         className="grid-item-text"
         onClick={() =>
-          window.open(`https://github.com/bonzonkim${title}`, '_blank')
+          window.open(`https://github.com/bonzonkim${gitRepo}`, '_blank')
         }
       >
         {title}
