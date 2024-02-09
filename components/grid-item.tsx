@@ -22,10 +22,14 @@ import { Global } from '@emotion/react';
 //   </Center>
 // );
 
+ 
 interface GridItemProps {
   children: string;
   title: string;
   thumbnail: StaticImageData;
+}
+
+interface WorkGridItemProps extends GridItemProps {
   gitRepo: string;
 }
 
@@ -34,7 +38,7 @@ export const ProjectGridItem = ({
   title,
   thumbnail,
   gitRepo,
-}: GridItemProps) => (
+}: WorkGridItemProps) => (
   <Center>
     <Box w="100%">
       <Image
