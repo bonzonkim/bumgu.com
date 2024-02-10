@@ -66,6 +66,7 @@ const Page = () => {
               alt="Profile image"
               width={130}
               height={130}
+              priority={true}
             />
           </Box>
         </Box>
@@ -249,7 +250,7 @@ const Page = () => {
                 colorScheme="teal"
                 leftIcon={<SiLinkedin />}
               >
-                Bumgu (Kelly) Kang
+                Bumgu Kang
               </Button>
             </Link>
           </ListItem>
