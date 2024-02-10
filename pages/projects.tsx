@@ -4,8 +4,8 @@ import Section from '../components/section';
 import { ProjectGridItem } from '../components/grid-item';
 import React from 'react';
 import Layout from '../components/layouts/article';
-import { projectGridItemProps } from '../data/projects/prjectData';
-import { WorkGridItemProps } from 'types/types';
+import { projectGridItemProps } from '../data/projects/projectData';
+import { WorkGridItemProps } from '../types/types';
 
 export const getStaticProps: GetStaticProps = () => {
   return {

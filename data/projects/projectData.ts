@@ -1,4 +1,4 @@
-import { WorkGridItemProps } from 'components/grid-item';
+import { WorkGridItemProps } from '../../types/types';
 
 import thumbnailLively from '../../public/images/works/Lively_main.png';
 import thumbnailWhatCandy from '../../public/images/works/whatCandy.png';
