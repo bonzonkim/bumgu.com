@@ -1,6 +1,7 @@
 import { Box, Container } from '@chakra-ui/react';
 import NavBar from '../navbar';
 import Head from 'next/head';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 //import NoSsr from '../no-ssr';
 
 const Main = ({ children, router }) => {
@@ -15,6 +16,7 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14}>
         {children}
+        <SpeedInsights />
       </Container>
     </Box>
   );
