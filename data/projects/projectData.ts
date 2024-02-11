@@ -4,7 +4,7 @@ import thumbnailLively from '../../public/images/works/Lively_main.png';
 import thumbnailWhatCandy from '../../public/images/works/whatCandy.png';
 import thumbnailSpotify from '../../public/images/works/know-your-spotify.png';
 
-export const projectGridItemProps: WorkGridItemProps[] = [
+export const projectGridItemData: WorkGridItemProps[] = [
   {
     title: 'Lively',
     thumbnail: thumbnailLively,
