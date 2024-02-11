@@ -31,6 +31,7 @@ import {
   SiLinkedin,
 } from 'react-icons/si';
 import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
+import { IoBookOutline } from "react-icons/io5";
 
 const Page = () => {
   return (
@@ -209,6 +210,21 @@ const Page = () => {
           SNS
         </Heading>
         <List>
+          <ListItem>
+            <Link
+              href="https://velog.io/@kellyb9/posts"
+              target="_blank"
+              as={NextLink}
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoBookOutline />}
+              >
+                velog.io/@kellyb9
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link
               href="https://github.com/bonzonkim"
