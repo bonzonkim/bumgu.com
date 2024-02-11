@@ -19,5 +19,4 @@ export type WorkGridItemProps = GridItemProps & {
 };
 
 export type CareerGridItemProps = GridItemProps & {
-  id: number;
 };

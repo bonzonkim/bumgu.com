@@ -6,10 +6,10 @@ import React from 'react';
 import Layout from '../components/layouts/article';
 import { CareerGridItemProps, CareerParagraphTypes } from '../types/types';
 import { careerEventData, careerParagraphData } from '../data/careers/careerData';
+import { GetStaticProps } from 'next';
 
 
-export const getStaticProps = () => {
-
+export const getStaticProps: GetStaticProps = () => {
   return {
     props: {
       careerEventData,
@@ -47,11 +47,10 @@ const Career = ({ careerEventData, careerParagraphData }) => {
           {careerEventData.map((item: CareerGridItemProps, index: number) => (
             <Section key={index}>
               <CareerGridItem
-                key={item.id}
+                key={index}
                 title={item.title}
                 thumbnail={item.thumbnail}
                 description={item.description}
-                id={index + 1}
               />
             </Section>
           ))}
