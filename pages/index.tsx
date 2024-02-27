@@ -42,7 +42,7 @@ const Page = () => {
             강범구 Bumgu Kang
           </Heading>
           <Heading as="h4" size="md">
-            Developer
+            Software Engineer
           </Heading>
           <p>한국어🇰🇷, English🇨🇦</p>
         </Box>
@@ -76,7 +76,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요. 웹 개발자 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요.소프트웨어 엔지니어 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">
@@ -124,6 +124,10 @@ const Page = () => {
         <BioSection>
           <BioYear>2023 Aug ~ 2023 Oct</BioYear>
           씨에스라크 소프트웨어(Splunk) 엔지니어 근무
+        </BioSection>
+        <BioSection>
+          <BioYear>2024 Feb ~ Present</BioYear>
+          스탠다드네트웍스 서버 엔지니어
         </BioSection>
         <Center>
           <Box my={4}>
