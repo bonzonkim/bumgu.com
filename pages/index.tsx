@@ -127,7 +127,7 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2024 Feb ~ Present</BioYear>
-          스탠다드네트웍스 서버 엔지니어
+          스탠다드네트웍스 시스템 엔지니어 / DevOps 엔지니어
         </BioSection>
         <Center>
           <Box my={4}>
