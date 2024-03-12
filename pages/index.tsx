@@ -31,6 +31,7 @@ import {
   SiLinkedin,
 } from 'react-icons/si';
 import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
+import { FaTowerObservation, FaLinux } from 'react-icons/fa6';
 import { IoBookOutline } from "react-icons/io5";
 
 const Page = () => {
@@ -215,6 +216,14 @@ const Page = () => {
         <br />
         <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
           Splunk
+        </Button>
+        <br />
+        <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
+          Linux
+        </Button>
+        <br />
+        <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
+          Zabbix
         </Button>
       </Section>
 
