@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph';
-import { BioSection, BioYear } from '../components/bio';
+import { BioSection, BioText, BioYear } from '../components/bio';
 import Section from '../components/section';
 import Image from 'next/image';
 import React from 'react';
@@ -94,40 +94,57 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>1999</BioYear>
-          서울 출생
+          <BioText>
+            서울 출생
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2017</BioYear>
-          서울 아이티 고등학교 전자통신과 졸업
+          <BioText>
+            서울 아이티 고등학교 전자통신과 졸업
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2017 ~ 2019</BioYear>
-          프리랜서 비트박서
+          <BioText>
+            프리랜서 비트박서
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2019 ~ 2021</BioYear>
-          25사단 군악대 (비트박서, 트럼보니스트)
+          <BioText>
+            25사단 군악대 (비트박서, 트럼보니스트) 병장 만기 제대
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          도봉구청 서울시 뉴딜 일자리 문화공간 및 이벤트 기획,운영 근무
+          <BioText>
+            도봉구청 서울시 뉴딜 일자리 문화공간 및 이벤트 기획,운영 근무
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2021 ~ 2022</BioYear>
-          캐나다 워킹홀리데이, 리쿼스토어, 한국 패스트 푸드 고객응대, 서브쿡,
-          캐셔 근무
+          <BioText>
+            캐나다 워킹홀리데이, 리쿼스토어, 한국 패스트 푸드 고객응대, 서브쿡, 캐셔 근무
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2022 ~ 2023</BioYear>
-          KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
+          <BioText>
+            KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2023 Aug ~ 2023 Oct</BioYear>
-          씨에스라크 소프트웨어(Splunk) 엔지니어 근무
+          <BioText>
+            씨에스라크 소프트웨어(Splunk) 엔지니어 인턴
+          </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2024 Feb ~ Present</BioYear>
-          스탠다드네트웍스 시스템 엔지니어 / DevOps 엔지니어
+          <BioText>
+            스탠다드네트웍스 시스템 엔지니어 / DevOps 엔지니어
+          </BioText>
         </BioSection>
         <Center>
           <Box my={4}>
