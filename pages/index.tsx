@@ -33,6 +33,7 @@ import {
 import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
 import { FaTowerObservation, FaLinux } from 'react-icons/fa6';
 import { IoBookOutline } from "react-icons/io5";
+import { SkillSection, SkillSectionContent } from 'components/skill-section';
 
 const Page = () => {
   return (
@@ -158,74 +159,82 @@ const Page = () => {
         </Center>
       </Section>
 
-      <Section>
-        <Heading as="h3" variant="section-title">
-          Skills
-        </Heading>
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaJava />}>
-          Java
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiJavascript />}>
-          JavaScript
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiTypescript />}>
-          TypeScript
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaReact />}>
-          React
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
-          Vim
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiNextdotjs />}>
-          Next.js
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<GrOracle />}>
-          Oracle
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<GrMysql />}>
-          MySQL
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiSpringboot />}>
-          Spring
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiHtml5 />}>
-          HTML
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiCss3 />}>
-          CSS
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaNode />}>
-          Node.js
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaNodeJs />}>
-          Express
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
-          Splunk
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
-          Linux
-        </Button>
-        <br />
-        <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
-          Zabbix
-        </Button>
-      </Section>
+      <SkillSection>
+          <Heading as="h3" variant="section-title">
+            Skills
+          </Heading>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
+            Language
+          </Heading>
+            <Button variant="ghost" colorScheme="teal" leftIcon={<FaJava />}>
+              Java
+            </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiJavascript />}>
+            JavaScript
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiTypescript />}>
+            TypeScript
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiHtml5 />}>
+            HTML
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiCss3 />}>
+            CSS
+          </Button>
+        </SkillSectionContent>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
+            Frameworks/Library
+          </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaReact />}>
+            React
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiNextdotjs />}>
+            Next.js
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSpringboot />}>
+            Spring
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaNode />}>
+            Node.js
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaNodeJs />}>
+            Express
+          </Button>
+        </SkillSectionContent>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
+            Database
+          </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<GrOracle />}>
+            Oracle
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<GrMysql />}>
+            MySQL
+          </Button>
+        </SkillSectionContent>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
+            ETC
+          </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
+            Vim
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGithub />}>
+            Github
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
+            Splunk
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
+            Linux
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
+            Zabbix
+          </Button>
+        </SkillSectionContent>
+      </SkillSection>
 
       <Section>
         <Heading as="h3" variant="section-title">
