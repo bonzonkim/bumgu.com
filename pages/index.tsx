@@ -159,10 +159,10 @@ const Page = () => {
         </Center>
       </Section>
 
-      <SkillSection>
           <Heading as="h3" variant="section-title">
             Skills
           </Heading>
+      <SkillSection>
         <SkillSectionContent>
           <Heading as="h5" size="sm">
             Language
