@@ -29,6 +29,10 @@ import {
   SiInstagram,
   SiGithub,
   SiLinkedin,
+  SiPrometheus,
+  SiGrafana,
+  SiKubernetes,
+  SiZdf
 } from 'react-icons/si';
 import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
 import { FaTowerObservation, FaLinux } from 'react-icons/fa6';
@@ -139,13 +143,13 @@ const Page = () => {
         <BioSection>
           <BioYear>2023 Aug ~ 2023 Oct</BioYear>
           <BioText>
-            씨에스라크 소프트웨어(Splunk) 엔지니어 인턴
+            씨에스라크 Software Engineer(Splunk) 엔지니어 인턴
           </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2024 Feb ~ Present</BioYear>
           <BioText>
-            스탠다드네트웍스 시스템 엔지니어 / DevOps 엔지니어
+            스탠다드네트웍스 Software Engineer / System Engineer
           </BioText>
         </BioSection>
         <Center>
@@ -216,6 +220,26 @@ const Page = () => {
         </SkillSectionContent>
         <SkillSectionContent>
           <Heading as="h5" size="sm">
+            DevOps, SRE
+          </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiKubernetes />}>
+            Kubernetes
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiPrometheus />}>
+            Prometheus
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
+            Grafana
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
+            Zabbix
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
+            Splunk
+          </Button>
+        </SkillSectionContent>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
             ETC
           </Heading>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
@@ -224,14 +248,8 @@ const Page = () => {
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGithub />}>
             Github
           </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
-            Splunk
-          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
             Linux
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
-            Zabbix
           </Button>
         </SkillSectionContent>
       </SkillSection>
