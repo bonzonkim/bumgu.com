@@ -15,7 +15,7 @@ type GridItemProps = {
 };
 
 export type WorkGridItemProps = GridItemProps & {
-  gitRepo: string;
+  gitRepo: string | null;
 };
 
 export type CareerGridItemProps = GridItemProps & {
