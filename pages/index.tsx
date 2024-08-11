@@ -82,7 +82,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요.소프트웨어 엔지니어 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요.주니어 DevOps 엔지니어 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">
@@ -96,67 +96,25 @@ const Page = () => {
 
       <Section>
         <Heading as="h3" variant="section-title">
-          Bio
+          Work Experience
         </Heading>
         <BioSection>
-          <BioYear>1999</BioYear>
+          <BioYear>2023 Aug ~ 2023 Nov</BioYear>
           <BioText>
-            서울 출생
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2017</BioYear>
-          <BioText>
-            서울 아이티 고등학교 전자통신과 졸업
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2017 ~ 2019</BioYear>
-          <BioText>
-            프리랜서 비트박서
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2019 ~ 2021</BioYear>
-          <BioText>
-            25사단 군악대 (비트박서, 트럼보니스트) 병장 만기 제대
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          <BioText>
-            도봉구청 서울시 뉴딜 일자리 문화공간 및 이벤트 기획,운영 근무
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2021 ~ 2022</BioYear>
-          <BioText>
-            캐나다 워킹홀리데이, 리쿼스토어, 한국 패스트 푸드 고객응대, 서브쿡, 캐셔 근무
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2022 ~ 2023</BioYear>
-          <BioText>
-            KH 정보 교육원 수료 (자바,스프링 백엔드 과정)
-          </BioText>
-        </BioSection>
-        <BioSection>
-          <BioYear>2023 Aug ~ 2023 Oct</BioYear>
-          <BioText>
-            씨에스라크 Software Engineer(Splunk) 엔지니어 인턴
+            Internship at CSLAC (Splunk Engineer)
           </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2024 Feb ~ Present</BioYear>
           <BioText>
-            스탠다드네트웍스 Software Engineer / System Engineer
+            DevOps, SRE, System engineer at Standard Networks
           </BioText>
         </BioSection>
         <Center>
           <Box my={4}>
             <NextLink href="/career">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My previous work career
+                I did this before became a Software Engineer :)
               </Button>
             </NextLink>
           </Box>
@@ -189,7 +147,7 @@ const Page = () => {
         </SkillSectionContent>
         <SkillSectionContent>
           <Heading as="h5" size="sm">
-            Frameworks/Library
+            Framework/Library
           </Heading>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaReact />}>
             React
@@ -205,17 +163,6 @@ const Page = () => {
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaNodeJs />}>
             Express
-          </Button>
-        </SkillSectionContent>
-        <SkillSectionContent>
-          <Heading as="h5" size="sm">
-            Database
-          </Heading>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<GrOracle />}>
-            Oracle
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<GrMysql />}>
-            MySQL
           </Button>
         </SkillSectionContent>
         <SkillSectionContent>
