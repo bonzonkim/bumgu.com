@@ -16,7 +16,6 @@ import Section from '../components/section';
 import Image from 'next/image';
 import React from 'react';
 import ProfileBumgu from '@/public/bumgu.jpg';
-import { GrOracle, GrMysql } from 'react-icons/gr';
 import {
   SiNextdotjs,
   SiVim,
@@ -32,7 +31,6 @@ import {
   SiPrometheus,
   SiGrafana,
   SiKubernetes,
-  SiZdf
 } from 'react-icons/si';
 import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
 import { FaTowerObservation, FaLinux } from 'react-icons/fa6';
