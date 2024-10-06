@@ -8,6 +8,7 @@ export const ProjectGridItem = ({
   title,
   thumbnail,
   gitRepo,
+  skills,
   description,
 }: WorkGridItemProps) => (
   <Center>
@@ -32,6 +33,9 @@ export const ProjectGridItem = ({
       >
         {title}
       </Text>
+        {skills.map((skill, idx, arr) => (
+        <span key={idx}>{skill}{idx < arr.length-1 && ', '}</span>
+        ))}
       <Text fontSize={14}>{description}</Text>
     </Box>
   </Center>

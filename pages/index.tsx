@@ -80,7 +80,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요.주니어 DevOps 엔지니어 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요. DevOps | SRE | System Engineer 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">

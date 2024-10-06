@@ -26,6 +26,7 @@ const Projects = ({ projectGridItemData }) => {
               title={item.title}
               thumbnail={item.thumbnail}
               gitRepo={item.gitRepo}
+              skills={item.skills}
               description={item.description}
             />
           </Section>
