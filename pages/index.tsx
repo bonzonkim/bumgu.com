@@ -17,12 +17,7 @@ import Image from 'next/image';
 import React from 'react';
 import ProfileBumgu from '@/public/bumgu.jpg';
 import {
-  SiNextdotjs,
   SiVim,
-  SiSpringboot,
-  SiCss3,
-  SiHtml5,
-  SiSplunk,
   SiTypescript,
   SiJavascript,
   SiInstagram,
@@ -31,9 +26,10 @@ import {
   SiPrometheus,
   SiGrafana,
   SiKubernetes,
+  SiGnubash
 } from 'react-icons/si';
-import { FaJava, FaReact, FaNode, FaNodeJs } from 'react-icons/fa';
-import { FaTowerObservation, FaLinux } from 'react-icons/fa6';
+import { FaDocker } from 'react-icons/fa';
+import { FaGolang, FaTowerObservation, FaLinux } from 'react-icons/fa6';
 import { IoBookOutline } from "react-icons/io5";
 import { SkillSection, SkillSectionContent } from 'components/skill-section';
 
@@ -80,7 +76,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요. DevOps | SRE | System Engineer 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요. SRE | System Engineer 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">
@@ -127,40 +123,17 @@ const Page = () => {
           <Heading as="h5" size="sm">
             Language
           </Heading>
-            <Button variant="ghost" colorScheme="teal" leftIcon={<FaJava />}>
-              Java
-            </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiJavascript />}>
             JavaScript
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiTypescript />}>
             TypeScript
           </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiHtml5 />}>
-            HTML
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaGolang />}>
+            Go
           </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiCss3 />}>
-            CSS
-          </Button>
-        </SkillSectionContent>
-        <SkillSectionContent>
-          <Heading as="h5" size="sm">
-            Framework/Library
-          </Heading>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<FaReact />}>
-            React
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiNextdotjs />}>
-            Next.js
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSpringboot />}>
-            Spring
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<FaNode />}>
-            Node.js
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<FaNodeJs />}>
-            Express
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGnubash />}>
+            Shell Script
           </Button>
         </SkillSectionContent>
         <SkillSectionContent>
@@ -170,32 +143,44 @@ const Page = () => {
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiKubernetes />}>
             Kubernetes
           </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaDocker />}>
+            Docker
+          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiPrometheus />}>
             Prometheus
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Grafana
           </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
+            Loki
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
+            Tempo
+          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
             Zabbix
-          </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiSplunk />}>
-            Splunk
           </Button>
         </SkillSectionContent>
         <SkillSectionContent>
           <Heading as="h5" size="sm">
             ETC
           </Heading>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
-            Vim
-          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGithub />}>
             Github
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
             Linux
           </Button>
+        </SkillSectionContent>
+        <SkillSectionContent>
+          <Heading as="h5" size="sm">
+            My Favorite Editor
+          </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
+            NeoVim
+          </Button>
+
         </SkillSectionContent>
       </SkillSection>
 
