@@ -76,7 +76,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요. SRE | System Engineer 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요. Software Engineer | System Engineer 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">
@@ -199,7 +199,7 @@ const Page = () => {
         <List>
           <ListItem>
             <Link
-              href="https://velog.io/@kellyb9/posts"
+              href="https://blog.bumgu.com"
               target="_blank"
               as={NextLink}
             >
