@@ -208,7 +208,7 @@ const Page = () => {
                 colorScheme="teal"
                 leftIcon={<IoBookOutline />}
               >
-                velog.io/@kellyb9
+                blog.bumgu.com
               </Button>
             </Link>
           </ListItem>
