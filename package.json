@@ -14,6 +14,9 @@
   "keywords": [],
   "author": "Bumgu Kelly Kang",
   "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.7.0",
