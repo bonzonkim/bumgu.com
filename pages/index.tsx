@@ -26,10 +26,12 @@ import {
   SiPrometheus,
   SiGrafana,
   SiKubernetes,
-  SiGnubash
+  SiGnubash,
+  SiGit,
+  SiVictoriametrics
 } from 'react-icons/si';
 import { FaDocker } from 'react-icons/fa';
-import { FaGolang, FaTowerObservation, FaLinux } from 'react-icons/fa6';
+import { FaGolang, FaTowerObservation, FaLinux, FaJava } from 'react-icons/fa6';
 import { IoBookOutline } from "react-icons/io5";
 import { SkillSection, SkillSectionContent } from 'components/skill-section';
 
@@ -93,15 +95,15 @@ const Page = () => {
           Work Experience
         </Heading>
         <BioSection>
-          <BioYear>2023 Aug ~ 2023 Nov</BioYear>
+          <BioYear>2024 Feb ~ 2025 Oct</BioYear>
           <BioText>
-            Internship at CSLAC (Splunk Engineer)
+            System engineer at Standard Networks
           </BioText>
         </BioSection>
         <BioSection>
-          <BioYear>2024 Feb ~ Present</BioYear>
+          <BioYear>2023 Aug ~ 2023 Nov</BioYear>
           <BioText>
-            DevOps, SRE, System engineer at Standard Networks
+            Internship at CSLAC (Splunk Engineer)
           </BioText>
         </BioSection>
         <Center>
@@ -123,17 +125,20 @@ const Page = () => {
           <Heading as="h5" size="sm">
             Language
           </Heading>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaGolang />}>
+            Go
+          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiJavascript />}>
             JavaScript
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiTypescript />}>
             TypeScript
           </Button>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<FaGolang />}>
-            Go
-          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGnubash />}>
             Shell Script
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<FaJava />}>
+            Java
           </Button>
         </SkillSectionContent>
         <SkillSectionContent>
@@ -155,6 +160,9 @@ const Page = () => {
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Loki
           </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiVictoriametrics />}>
+            VictoriaLogs
+          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Tempo
           </Button>
@@ -166,8 +174,8 @@ const Page = () => {
           <Heading as="h5" size="sm">
             ETC
           </Heading>
-          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGithub />}>
-            Github
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGit />}>
+            Git
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinux />}>
             Linux
@@ -175,7 +183,7 @@ const Page = () => {
         </SkillSectionContent>
         <SkillSectionContent>
           <Heading as="h5" size="sm">
-            My Favorite Editor
+            Go-to Editor
           </Heading>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiVim />}>
             NeoVim

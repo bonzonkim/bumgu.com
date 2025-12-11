@@ -4,4 +4,8 @@ package-lock.json
 .idea/**/*
 *.report.html
 .DS_Store
+<<<<<<< HEAD
 out/
+=======
+out
+>>>>>>> 58b055e (update)

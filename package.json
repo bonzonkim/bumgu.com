@@ -19,14 +19,22 @@
     "@chakra-ui/react": "^2.7.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@react-icons/all-files": "^4.1.0",
+    "@react-icons/all-files": "5.5.0",
     "@types/three": "^0.152.1",
     "@vercel/speed-insights": "^1.0.9",
+<<<<<<< HEAD
     "framer-motion": "^12.0.0",
     "next": "^16.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^4.9.0",
+=======
+    "framer-motion": "^10.12.16",
+    "next": "^13.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "5.5.0",
+>>>>>>> 58b055e (update)
     "sharp": "^0.32.1",
     "three": "^0.153.0"
   },
