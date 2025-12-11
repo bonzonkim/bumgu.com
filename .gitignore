@@ -4,3 +4,4 @@ package-lock.json
 .idea/**/*
 *.report.html
 .DS_Store
+out/
