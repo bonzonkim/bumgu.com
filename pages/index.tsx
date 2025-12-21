@@ -28,7 +28,8 @@ import {
   SiKubernetes,
   SiGnubash,
   SiGit,
-  SiVictoriametrics
+  SiVictoriametrics,
+  SiArgo
 } from 'react-icons/si';
 import { FaDocker } from 'react-icons/fa';
 import { FaGolang, FaTowerObservation, FaLinux, FaJava } from 'react-icons/fa6';
@@ -162,6 +163,9 @@ const Page = () => {
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiVictoriametrics />}>
             VictoriaLogs
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiArgo />}>
+            ArgoCD
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Tempo
