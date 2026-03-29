@@ -96,7 +96,7 @@ const Page = () => {
           Work Experience
         </Heading>
         <BioSection>
-          <BioYear>2025 Jan ~ Present</BioYear>
+          <BioYear>2026 Jan ~ Present</BioYear>
           <BioText>
             DevOps Engineer @ Miso
           </BioText>
