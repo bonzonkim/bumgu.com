@@ -96,15 +96,21 @@ const Page = () => {
           Work Experience
         </Heading>
         <BioSection>
+          <BioYear>2025 Jan ~ Present</BioYear>
+          <BioText>
+            DevOps Engineer @ Miso
+          </BioText>
+        </BioSection>
+        <BioSection>
           <BioYear>2024 Feb ~ 2025 Oct</BioYear>
           <BioText>
-            System engineer at Standard Networks
+            System engineer @ Standard Networks
           </BioText>
         </BioSection>
         <BioSection>
           <BioYear>2023 Aug ~ 2023 Nov</BioYear>
           <BioText>
-            Internship at CSLAC (Splunk Engineer)
+            Internship @ CSLAC (Splunk Engineer)
           </BioText>
         </BioSection>
         <Center>
