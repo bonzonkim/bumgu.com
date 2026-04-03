@@ -15,7 +15,7 @@ import { BioSection, BioText, BioYear } from '../components/bio';
 import Section from '../components/section';
 import Image from 'next/image';
 import React from 'react';
-import ProfileBumgu from '@/public/bumgu.jpg';
+import ProfileBumgu from '@/public/bumgu_profile.jpg';
 import {
   SiVim,
   SiTypescript,
@@ -79,7 +79,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
-        <Paragraph>안녕하세요. Software Engineer | System Engineer 강범구 입니다.</Paragraph>
+        <Paragraph>안녕하세요. DevOps Engineer | SRE 강범구 입니다.</Paragraph>
         <Center>
           <Box my={4}>
             <NextLink href="/projects">
