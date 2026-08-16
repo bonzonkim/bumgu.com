@@ -12,7 +12,7 @@ export const projectGridItemData: WorkGridItemProps[] = [
     gitRepo: '',
     skills: ['Kubernetes', 'Prometheus', 'Loki', 'Grafana', 'Zabbix'],
     description:
-      '현재 재직중인 회사에서 Zabbix, Grafana, Prometheus등을 사용하여 Observability를 구현한 프로젝트입니다.',
+      'Zabbix, Grafana, Prometheus등을 사용하여 Observability를 구축한 프로젝트입니다.',
   },
   {
     title: 'know your spotify',
