@@ -20,18 +20,19 @@ import {
   SiVim,
   SiTypescript,
   SiJavascript,
-  SiInstagram,
   SiGithub,
-  SiLinkedin,
   SiPrometheus,
   SiGrafana,
   SiKubernetes,
   SiGnubash,
   SiGit,
   SiVictoriametrics,
-  SiArgo
+  SiArgo,
+  SiDatadog,
+  SiTerraform,
+  SiGithubactions
 } from 'react-icons/si';
-import { FaDocker } from 'react-icons/fa';
+import { FaDocker, FaLinkedin } from 'react-icons/fa';
 import { FaGolang, FaTowerObservation, FaLinux, FaJava } from 'react-icons/fa6';
 import { IoBookOutline } from "react-icons/io5";
 import { SkillSection, SkillSectionContent } from 'components/skill-section';
@@ -47,7 +48,6 @@ const Page = () => {
           <Heading as="h4" size="md">
             Software Engineer
           </Heading>
-          <p>한국어🇰🇷, English🇨🇦</p>
         </Box>
         <Box
           flexShrink={0}
@@ -84,7 +84,7 @@ const Page = () => {
           <Box my={4}>
             <NextLink href="/projects">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My Projects :)
+                Projects
               </Button>
             </NextLink>
           </Box>
@@ -113,15 +113,6 @@ const Page = () => {
             Internship @ CSLAC (Splunk Engineer)
           </BioText>
         </BioSection>
-        <Center>
-          <Box my={4}>
-            <NextLink href="/career">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                I did this before became a Software Engineer :)
-              </Button>
-            </NextLink>
-          </Box>
-        </Center>
       </Section>
 
           <Heading as="h3" variant="section-title">
@@ -143,6 +134,9 @@ const Page = () => {
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGnubash />}>
             Shell Script
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiTerraform />}>
+            Terraform
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaJava />}>
             Java
@@ -167,6 +161,9 @@ const Page = () => {
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Loki
           </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiDatadog />}>
+            Datadog
+          </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiVictoriametrics />}>
             VictoriaLogs
           </Button>
@@ -175,6 +172,9 @@ const Page = () => {
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<SiGrafana />}>
             Tempo
+          </Button>
+          <Button variant="ghost" colorScheme="teal" leftIcon={<SiGithubactions />}>
+            Github Actions
           </Button>
           <Button variant="ghost" colorScheme="teal" leftIcon={<FaTowerObservation />}>
             Zabbix
@@ -212,7 +212,7 @@ const Page = () => {
 
       <Section>
         <Heading as="h3" variant="section-title">
-          SNS
+          Social Networks
         </Heading>
         <List>
           <ListItem>
@@ -247,21 +247,6 @@ const Page = () => {
           </ListItem>
           <ListItem>
             <Link
-              href="https://www.instagram.com/b9develope"
-              target="_blank"
-              as={NextLink}
-            >
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<SiInstagram />}
-              >
-                @b9develope
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
               href="https://www.linkedin.com/in/bumgu"
               target="_blank"
               as={NextLink}
@@ -269,7 +254,7 @@ const Page = () => {
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<SiLinkedin />}
+                leftIcon={<FaLinkedin />}
               >
                 Bumgu Kang
               </Button>
